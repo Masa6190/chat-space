@@ -19,7 +19,6 @@
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|timestamp|integer|null: false|
 
 ### Association
 - belongs_to :group
