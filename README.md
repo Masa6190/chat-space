@@ -2,7 +2,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false|index: true|
 |email_adress|integer|null: false|
 |password|integer|null: false|
 
