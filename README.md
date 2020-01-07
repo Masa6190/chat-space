@@ -29,7 +29,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|groupname|integer|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users
