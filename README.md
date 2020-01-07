@@ -2,7 +2,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|add_index|users|username|
 |username|integer|null: false|
 |email_adress|integer|null: false|
 |password|integer|null: false|
