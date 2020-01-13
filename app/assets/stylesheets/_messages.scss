@@ -8,27 +8,50 @@
   background-color: #253141;
   display: flex;
   align-items: center;
+
   &__contents{
     height: 20px;
-    width: 260px;
+    width: 100%;
     font-size: 16px;
-    background-color: white;
     display: flex;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: space-between;
+
     &--name {
       height: 20px;
-      width: 200px;
+      width: 220px;
       line-height: 1.2;
-      background-color: yellow;
+      color: white;
     }
-    &--icon {
-      height: 20px;
-      width: 60px;
-      background-color: red;
-      line-height: 1.3;
+
+    &--box{
+      display: flex;
+
+      &--edit {
+        height: 20px;
+        line-height: 1.3;
+        text-align: right;
+        margin-left: 5px;
+        
+        .fas.fa-edit {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+
+      &--cog {
+        height: 20px;
+        line-height: 1.3;
+        text-align: right;
+        margin-left: 5px;
+
+        .fa.fa-cog {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
     }
   }
 }

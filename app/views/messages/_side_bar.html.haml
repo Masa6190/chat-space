@@ -2,8 +2,13 @@
   .header__contents
     .header__contents--name
       masa
-    .header__contents--icon
-      子要素
+    %ul.header__contents--box
+      %li.header__contents--box--edit
+        = link_to "#" do
+          %i.fas.fa-edit
+      %li.header__contents--box--cog
+        = link_to "#" do
+          %i.fa.fa-cog
 .contents
   .contents__message
     follow me!
