@@ -2,56 +2,122 @@
   box-sizing: border-box;
 }
 
-.header {
-  height: 100px;
-  width: 300px;
-  background-color: #253141;
+.wrapper {
   display: flex;
-  align-items: center;
-
-  &__contents{
-    height: 20px;
-    width: 100%;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: space-between;
-
-    &--name {
-      height: 20px;
-      width: 220px;
-      line-height: 1.2;
-      color: white;
-    }
-
-    &--box{
+  height: 100%;
+  .sidebar {
+    width: 300px;
+    .header {
+      height: 100px;
+      width: 300px;
+      background-color: #253141;
       display: flex;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      top: 0;
 
-      &--edit {
+      &__contents{
         height: 20px;
-        line-height: 1.3;
-        text-align: right;
-        margin-left: 5px;
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-between;
         
-        .fas.fa-edit {
-          text-decoration: none;
-          color: #ffffff;
+        &--name {
+          height: 20px;
+          width: 220px;
+          line-height: 1.2;
+          color: white;
         }
-      }
-
-      &--cog {
-        height: 20px;
-        line-height: 1.3;
-        text-align: right;
-        margin-left: 5px;
-
-        .fa.fa-cog {
-          text-decoration: none;
-          color: #ffffff;
+        
+        &--box{
+          display: flex;
+          
+          &--edit {
+            height: 20px;
+            line-height: 1.3;
+            text-align: right;
+            margin-left: 5px;
+            
+            .fas.fa-edit {
+              text-decoration: none;
+              color: #ffffff;
+            }
+          }
+          
+          &--cog {
+            height: 20px;
+            line-height: 1.3;
+            text-align: right;
+            margin-left: 5px;
+            
+            .fa.fa-cog {
+              text-decoration: none;
+              color: #ffffff;
+            }
+          }
         }
       }
     }
+    
+    
+    
+    .groups {
+      color: #ffffff;
+      font: bold;
+      background-color: #2f3e51;
+      width: 300px;
+      height: calc(100vh - 100px);
+      position: fixed;
+      left: 0;
+      top: 100px;
+      &__userjoin {
+        height: 90px;
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        &--name {
+          height: 23px;
+          width: 240px;
+          font-size: 15px;
+          line-height: 1.1;
+        }
+        &--message {
+          height: 11px;
+          width: 240px;
+          font-size: 11px;
+          margin-top: 5px;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  height: 100%;
+  &__header {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: yellow;
+    position: fixed;
+    left: 300px;
+  }
+  &__body {
+    height: calc(100% - 100px - 90px);
+    width: calc(100vw - 300px);
+    background-color: red;
+  }
+  &__footer {
+    height: 90px;
+    width: calc(100vw - 300px);
+    background-color: purple;
+    position: fixed;
+    bottom: 0px;
   }
 }
