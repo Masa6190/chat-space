@@ -51,11 +51,11 @@
   .main__footer
     .main__footer__message
       .main__footer__message__box
-        .main__footer__message__box--left
-          %input#textbox{:type=>:text, :name => :name}
+        %input#textbox{:type=>:text, :name => :name, :placeholder => "type a message"}
+        //.main__footer__message__box--left
         .main__footer__message__box--right
           %label{class: "file"}
             = icon('fas', 'image')
             %input{type: "file"}
     .main__footer__send
-      %input#sub{:type => "submit", :value => "send"}
+      %input#sub{:type => "submit", :value => "Send",}
