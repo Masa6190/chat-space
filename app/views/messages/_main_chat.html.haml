@@ -2,60 +2,28 @@
   .main__header
     .main__header--left
       test
-      .main__header--left--name
-        Member : masa
-    .main__header--right
-      = link_to "#" do
-        Edit
+      %ul.main__header--left--box
+        %li.main__header--left--box--groups
+        Member :　
+        %li.main__header--left--box--name
+        aaa
+    = link_to "#", class:"Edit" do 
+      Edit
   .main__body
-    .main__body__message
-      .main__body__message--box
-        .main__body__message--box--name
-          masa
-        .main__body__message--box--time
-          2019/11/20(web) 17:43:01
-      .main__body__message--comment
-        aaaaaaaa
-    .main__body__message
-      .main__body__message--box
-        .main__body__message--box--name
-          masa
-        .main__body__message--box--time
-          2019/11/20(web) 17:43:01
-      .main__body__message--comment
-        aaaaaaaa
-    .main__body__message
-      .main__body__message--box
-        .main__body__message--box--name
-          masa
-        .main__body__message--box--time
-          2019/11/20(web) 17:43:01
-      .main__body__message--comment
-        aaaaaaaa
-    .main__body__message
-      .main__body__message--box
-        .main__body__message--box--name
-          masa
-        .main__body__message--box--time
-          2019/11/20(web) 17:43:01
-      .main__body__message--comment
-        aaaaaaaa
-    .main__body__message
-      .main__body__message--box
-        .main__body__message--box--name
-          masa
-        .main__body__message--box--time
-          2019/11/20(web) 17:43:01
-      .main__body__message--comment
-        aaaaaaaa
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+
   .main__footer
     .main__footer__message
-      .main__footer__message__box
-        %input#textbox{:type=>:text, :name => :name, :placeholder => "type a message"}
+      %input#textbox{:type=>:text, :name => :name, :placeholder => "type a message"}
         //.main__footer__message__box--left
         .main__footer__message__box--right
           %label{class: "file"}
             = icon('fas', 'image')
-            %input{type: "file"}
+            %input{type: "file", accept:"image"}
     .main__footer__send
       %input#sub{:type => "submit", :value => "Send",}
