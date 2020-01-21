@@ -1,0 +1,18 @@
+.sidebar
+  .header
+    .header__contents
+      .header__contents--name
+        masa
+      %ul.header__contents--box
+        %li.header__contents--box--edit
+          = link_to "#" do
+            %i.fas.fa-edit
+        %li.header__contents--box--cog
+          = link_to "#" do
+            %i.fa.fa-cog
+  .groups
+    = render 'messages_side'
+    = render 'messages_side'
+    = render 'messages_side'
+    = render 'messages_side'
+    = render 'messages_side'

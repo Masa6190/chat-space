@@ -1,0 +1,29 @@
+.main
+  .main__header
+    .main__header--left
+      test
+      %ul.main__header--left--box
+        %li.main__header--left--box--groups
+        Member :　
+        %li.main__header--left--box--name
+        aaa
+    = link_to "#", class:"Edit" do 
+      Edit
+  .main__body
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+    = render 'messages_main'
+
+  .main__footer
+    .main__footer__message
+      %input#textbox{:type=>:text, :name => :name, :placeholder => "type a message"}
+        //.main__footer__message__box--left
+        .main__footer__message__box--right
+          %label{class: "file"}
+            = icon('fas', 'image')
+            %input{type: "file", accept:"image"}
+    .main__footer__send
+      %input#sub{:type => "submit", :value => "Send",}
