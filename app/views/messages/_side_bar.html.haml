@@ -2,10 +2,10 @@
   .header
     .header__contents
       .header__contents--name
-        masa
+        = current_user.name
       %ul.header__contents--box
         %li.header__contents--box--edit
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             %i.fas.fa-edit
         %li.header__contents--box--cog
           = link_to "#" do
