@@ -1,5 +1,13 @@
-.groups__userjoin
-  .groups__userjoin--name
-    techcamp  
-  .groups__userjoin--message
-    まだメッセージがありません
+- current_user.groups.each do |group|
+  .groups__userjoin
+    = link_to '#' do
+      .groups__userjoin--name
+        = group.name
+      .groups__userjoin--message
+        メッセージはまだありません。
+        
+-# .groups__userjoin
+-#   .groups__userjoin--name
+-#     @group.name
+-#   .groups__userjoin--message
+-#     @group.
