@@ -5,14 +5,10 @@
         = current_user.name
       %ul.header__contents--box
         %li.header__contents--box--edit
-          = link_to edit_user_path(current_user) do
+          = link_to new_group_path do
             %i.fas.fa-edit
         %li.header__contents--box--cog
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             %i.fa.fa-cog
   .groups
-    = render 'messages_side'
-    = render 'messages_side'
-    = render 'messages_side'
-    = render 'messages_side'
-    = render 'messages_side'
+    = render 'messages/messages_side'
