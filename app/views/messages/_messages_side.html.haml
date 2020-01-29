@@ -1,13 +1,14 @@
 - current_user.groups.each do |group|
   .groups__userjoin
-    = link_to '#' do
+    = link_to group_messages_path(group) do
       .groups__userjoin--name
         = group.name
       .groups__userjoin--message
-        メッセージはまだありません。
+        = group.show_last_message
+        -# メッセージはまだありません。
         
 -# .groups__userjoin
 -#   .groups__userjoin--name
 -#     @group.name
 -#   .groups__userjoin--message
--#     @group.
+    -# @group.

@@ -1,8 +1,8 @@
 .main__body__message
   .main__body__message--box
     .main__body__message--box--name
-      masa
+      = messages_main.user.name
     .main__body__message--box--time
-      2019/11/20(web) 17:43:01
+      = messages_main.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .main__body__message--comment
     aaaaaaaa
