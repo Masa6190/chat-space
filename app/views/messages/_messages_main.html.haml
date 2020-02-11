@@ -5,4 +5,7 @@
     .main__body__message--box--time
       = messages_main.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .main__body__message--comment
-    aaaaaaaa
+    - if messages_main.content.present?
+      %p.main__body__message--comment--content
+        = messages_main.content
+    = image_tag messages_main.image.url, class: 'main__body__message--comment--image' if messages_main.image.present?
